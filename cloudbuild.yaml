@@ -5,4 +5,4 @@ steps:
   - name: "gcr.io/cloud-builders/docker"
     args: ["build", "-t", "gcr.io/kubetest-mindbody/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "gcr.io/{GCP_PROJECT_ID}/gcp-cd-codelab:$REVISION_ID"
+  - "gcr.io/kubetest-mindbody/gcp-cd-codelab:$REVISION_ID"
